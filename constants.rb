@@ -23,5 +23,5 @@ REPLACEMENTS = {												# code from Code Golf Stack Exchange
 	"-"		=> "a[i] -= 1 || -1"
 }
 
-WHITESPACE 	= "mno"											# substitution input
+WHITESPACE 	= "MNO"											# substitution input
 TRINARY		= "012"												# substitution output
