@@ -1,12 +1,12 @@
 # mnof
 
-This is a BF derivative that uses the characters `mno`.
+This is a BF derivative that uses the characters `MNO`.
 
 ## Syntax
 
-All sequences of the characters `mno` are interpreted as trits (ternary digits) with all other characters ignored/removed. The translation table is below:
+All sequences of the characters `MNO` are interpreted as trits (ternary digits) with all other characters ignored/removed. The translation table is below:
 
-    WHITESPACE 	= "mno"
+    WHITESPACE 	= "MNO"
     TRINARY		  = "012"	
 
 Then, the translated code is padded with `2`s to an even length, chunked into sections of 2, and interpreted as BF code by the following table:
