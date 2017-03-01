@@ -1,7 +1,7 @@
 #!/usr/bin/ruby
 
 #################################################################
-#		  WhiteSpaceF**k v0.0.1 by Dmitry Kudriavtsev			#
+#		              mnof v0.2 by Dmitry Kudriavtsev	            	#
 #################################################################
 
 # Known issues:
@@ -19,7 +19,7 @@ ARRAY_SIZE = 1048576
 # of the way the interpreter works. It is not a bug in my code.
 #
 # The program chokes on Brainfuck code with symbols other than
-# the standard .,+-[]<>
+# the standard .,+-[]<> (not anymore)
 
 abort "Incorrect number of arguments.\nUsage: #{File.basename __FILE__} <infile>" if ARGV.size != 1
 abort "The file #{ARGV[0]} does not exist." if not File.exist? ARGV[0]
@@ -30,7 +30,7 @@ program = File.read ARGV[0]										# read the input file
 
 program.delete! "^ \t\n"
 
-program.tr! WHITESPACE, TRINARY									# translate whitespace into trits
+program.tr! WHITESPACE, TRINARY									# translate MNO into trits
 
 program += "2" if program.length.odd?							# pad with 2's if length is odd
 
