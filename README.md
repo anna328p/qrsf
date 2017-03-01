@@ -1,13 +1,13 @@
-# mnof
+# qrsf
 
-This is a BF derivative that uses the characters `MNO`.
+This is a BF derivative that uses the characters `qrs`.
 
 ## Syntax
 
-All sequences of the characters `MNO` are interpreted as trits (ternary digits) with all other characters ignored/removed. The translation table is below:
+All sequences of the characters `qrs` are interpreted as trits (ternary digits) with all other characters ignored/removed. The translation table is below:
 
-    WHITESPACE 	= "MNO"
-    TRINARY		  = "012"	
+    WHITESPACE 	= "qrs"
+    TRINARY		= "012"	
 
 Then, the translated code is padded with `2`s to an even length, chunked into sections of 2, and interpreted as BF code by the following table:
 
