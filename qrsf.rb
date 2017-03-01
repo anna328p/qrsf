@@ -1,7 +1,7 @@
 #!/usr/bin/ruby
 
 #################################################################
-#		              mnof v0.2 by Dmitry Kudriavtsev	            	#
+#		              qrsf v0.2 by Dmitry Kudriavtsev	            	#
 #################################################################
 
 # Known issues:
@@ -30,7 +30,7 @@ program = File.read ARGV[0]										# read the input file
 
 program.delete! "^ \t\n"
 
-program.tr! WHITESPACE, TRINARY									# translate MNO into trits
+program.tr! WHITESPACE, TRINARY									# translate qrs into trits
 
 program += "2" if program.length.odd?							# pad with 2's if length is odd
 
